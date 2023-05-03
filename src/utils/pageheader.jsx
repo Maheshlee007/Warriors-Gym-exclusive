@@ -1,4 +1,4 @@
-import headerbg from "../assets/about/PageHead.png";
+import headerbg from "../assets/about/pageHead.png";
 
 const PageHead = ({ title }) => {
   return (
