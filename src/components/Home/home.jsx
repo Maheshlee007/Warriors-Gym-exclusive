@@ -1,4 +1,5 @@
 import Footer from "../Footer/footer";
+import Pricing from "../Pricings/Pricing";
 import About from "./homeSectionsComps/KnowUs";
 import Testimonials from "./homeSectionsComps/Testimonials";
 import Choose from "./homeSectionsComps/choose";
@@ -15,6 +16,7 @@ const Home = () => {
       <Choose />
       <Trainers />
       <Testimonials />
+      <Pricing exclude/>
       <Footer />
     </div>
   );

@@ -2,6 +2,7 @@ import styles from "../../constants/style";
 import PageHead from "../../utils/pageheader";
 import React, { useState } from "react";
 import Footer from "../../components/Footer/footer";
+import { useNavigate } from "react-router-dom";
 
 const days = [
   "Monday",
@@ -43,6 +44,7 @@ const Schedule = () => {
   const [currentday, setday] = useState(days[val]);
   const btn = " bg-black text-lime-400 border-2 border-lime-400";
   const btn_active = " bg-lime-500 text-black ";
+  const navigate = useNavigate("/pricing");
   const getrandom = () => {
     return Math.floor(Math.random() * 8);
   };
@@ -101,7 +103,10 @@ const Schedule = () => {
                 </div>
 
                 <div>
-                  <button className="text-lg font-bold rounded-xl p-2 bg-lime-400 text-black">
+                  <button
+                    className="text-lg font-bold rounded-xl p-2 bg-lime-400 text-black"
+                    onClick={() => navigate("/pricing")}
+                  >
                     Join Now
                   </button>
                 </div>

@@ -9,11 +9,11 @@ const Contact = () => {
       <PageHead title="Contact " />
 
       <section
-        className={`${styles.marginY} ${styles.paddingX} mt-20 flex sm:justify-between flex-wrap item-center gap-9 `}
+        className={`${styles.marginY} ${styles.paddingX} sm:mt-20 flex sm:justify-between flex-wrap item-center gap-9 `}
       >
-        <div className="w-[45%]">
+        <div className="sm:w-[45%]">
           <Heading title="Any Information you need" />
-          <p className="my-12 p-5">
+          <p className="mt-[100px] sm:my-12 p-5">
             we're total nerds when it comes to design personal programmes. We
             use Athletic based training model and make sure to 'dot every i and
             cross every t' so that your progamme rock solid and worth every
@@ -56,10 +56,10 @@ const Contact = () => {
         </div>
 
         <div
-          className={`${styles.marginY} p-6 ${styles.paddingX} w-[50%] border-2 border-lime-400 relative`}
+          className={`${styles.marginY} p-6 ${styles.paddingX} mb-[100px] sm:w-[50%] border-2 border-lime-400 relative`}
         >
           <h2 className="text-black font-bold bg-lime-400 rounded-lg w-[30%] absolute -top-3 left-3 pl-4">
-            Let us, Know You
+            Get In touch !
           </h2>
           <form autoComplete={false}>
             <div className="relative mt-5 ">

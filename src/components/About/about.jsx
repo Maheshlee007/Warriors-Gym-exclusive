@@ -4,8 +4,10 @@ import PageHead from "../../utils/pageheader";
 import bg from "../../assets/about/imgbg.svg";
 import run from "../../assets/about/run.png";
 import Footer from "../Footer/footer";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <div className="bg-primary text-white">
       <PageHead title="About" />
@@ -26,7 +28,10 @@ const About = () => {
               nutritionists will work with you to create a personalized fitness
               and nutrition plan that helps you reach your specific goals.
             </p>
-            <button className="bg-lime-gradient rounded-md text-white p-3 font-poppins font-normal mt-10">
+            <button
+              className="bg-lime-gradient rounded-md text-white p-3 font-poppins font-normal mt-10"
+              onClick={() => navigate("/pricing")}
+            >
               Get Started
             </button>
             <div className="absolute  w-[40%] h-[35%] top-0 pink__gradient" />

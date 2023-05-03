@@ -4,6 +4,7 @@ import { premium, standard, starter } from "../../assets";
 import Button from "../../utils/Button";
 import Heading from "../../utils/heading";
 import Footer from "../Footer/footer";
+import Stripe from "../payments/paymentStripe";
 
 const features = [
   "Unlimited Club ACCESS",
@@ -19,19 +20,19 @@ const plans = [
   {
     name: "starters plan",
     bg: starter,
-    price: "$49/ 3Month",
+    price: "$ 49 /Month",
     border: "border-lime-300",
   },
   {
     name: "standard plan",
     bg: standard,
-    price: "$99/Month",
+    price: "$ 99 /Month",
     border: "border-slate-400",
   },
   {
     name: "premium plan",
     bg: premium,
-    price: "$129/Month",
+    price: "$ 129 /Month",
     border: "border-amber-300",
   },
 ];
@@ -39,15 +40,19 @@ const plans = [
 const Pricing = ({ exclude }) => {
   return (
     <div className="bg-primary text-white ">
-      <PageHead title="Pricing" />
+    {exclude ? null:  <PageHead title="Pricing" />}
       <Heading title="Exclusive pricing" />
 
       <section
-        className={`${styles.marginY} ${styles.paddingX} mt-20 ${styles.flexbetween}`}
+        className={`${styles.marginY} ${styles.paddingX} mt-20 ${styles.flexbetween} gap-8 font-poppins`}
       >
         {plans.map((plan) => {
+          const amt = Number(plan.price.split(" ")[1]);
           return (
-            <div className="space-t-5 w-[30%] text-white  rounded-2xl">
+            <div
+              key={plan.name}
+              className="space-t-5 sm:w-[30%] text-white  rounded-2xl"
+            >
               <div className="relative rounded-sm">
                 <img
                   src={plan.bg}
@@ -64,9 +69,14 @@ const Pricing = ({ exclude }) => {
                   {plan.price}
                 </h1>
                 {features.map((feature) => {
-                  return <p>✔️ {feature}</p>;
+                  return <p key={feature}>✔️ {feature}</p>;
                 })}
-                <Button text="Get Started" />
+
+                <Stripe
+                  amount={amt}
+                  desc={`${plan.name} ${plan.price}`}
+                  border={`${plan.border}`}
+                />
               </div>
             </div>
           );
