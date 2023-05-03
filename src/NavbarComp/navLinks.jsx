@@ -107,6 +107,7 @@ const NavLinks = () => {
             </NavLink>
           </section>
           <Button text="join now" />
+          {/* ln */}
         </div>
       </ul>
       <div
