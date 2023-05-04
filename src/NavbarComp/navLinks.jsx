@@ -111,9 +111,9 @@ const NavLinks = () => {
         </div>
       </ul>
       <div
-        className="  gap-3 justify-between items-center mx-8 ss:hidden list-none
+        className="  gap-3 justify-evenly items-center mx-8 ss:hidden list-none
       bg-primary border-x-4 border-lime-500 text-black text-5xl w-full -left-8 
-       p-2 rounded-full z-50 flex fixed bottom-0 transition-all duration-100 ease-in"
+       pl-1 rounded-full z-50 flex fixed bottom-0 transition-all duration-100 ease-in"
       >
         <li className={highlight}>
           <NavLink
@@ -122,7 +122,7 @@ const NavLinks = () => {
           >
             <img
               src="https://img.icons8.com/nolan/96/84cc16/0072FF/overtime.png"
-              className="h-[74px] hover:h-[94px]"
+              className="h-[54px] hover:h-[64px]"
             />
           </NavLink>
         </li>
@@ -133,7 +133,7 @@ const NavLinks = () => {
           >
             <img
               src="https://img.icons8.com/nolan/96/84cc16/0072FF/business-contact.png"
-              className="h-[74px] hover:h-[94px]"
+              className="h-[54px] hover:h-[64px]"
             />
           </NavLink>
         </li>
@@ -144,7 +144,7 @@ const NavLinks = () => {
           >
             <img
               src="https://img.icons8.com/nolan/96/84cc16/0072FF/google-home.png"
-              className="h-[84px] hover:h-[94px]"
+              className="h-[64px] hover:h-[74px]"
             />
           </NavLink>
         </li>
@@ -165,7 +165,7 @@ const NavLinks = () => {
           >
             <img
               src="https://img.icons8.com/3d-fluency/94/dumbbell.png"
-              className="h-[74px]  hover:h-[94px]"
+              className="h-[54px]  hover:h-[64px]"
             />
           </NavLink>
         </li>
@@ -173,7 +173,7 @@ const NavLinks = () => {
           <button className="rotate-180" onClick={() => setMenu(!menu)}>
             <img
               src="https://img.icons8.com/nolan/96/84cc16/0072FF/drag-list-down.png"
-              className="h-[74px] hover:h-[94px]"
+              className="h-[54px] hover:h-[64px]"
             />
           </button>
 
