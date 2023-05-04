@@ -1,8 +1,10 @@
 import styles, { layout } from "../../../constants/style";
 import Heading from "../../../utils/heading";
 import know_us from "../../../assets/Home/gymPic.png";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
   return (
     <section className={`${styles.marginY} ${styles.paddingX} mt-20`}>
       <Heading title="Let's know Who We Are" />
@@ -18,7 +20,10 @@ const About = () => {
             quickly...Take your health and body to the next level with our
             comprehensive program designed to help you reach your fitness goals.
           </p>
-          <button className="bg-lime-gradient rounded-md text-white p-3 font-poppins font-normal mt-10">
+          <button
+            className="bg-lime-gradient rounded-md text-white p-3 font-poppins font-normal  mt-10"
+            onClick={() => navigate("/about")}
+          >
             Get Started
           </button>
         </aside>

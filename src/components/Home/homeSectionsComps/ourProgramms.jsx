@@ -4,12 +4,12 @@ import styles from "../../../constants/style";
 import Heading from "../../../utils/heading";
 
 const OurProgramms = () => {
-  const dim = "b";
+  const PROGRESSION_img=<img src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/combo-chart.png"/>;
   return (
     <>
       <Heading title="Our Programms" />
 
-      <div className="sm:flex  flex-col  sm:m-5 sm:flex-row mx-auto w-[50%] sm:w-full  sm:justify-evenly mb-11 ">
+      <div className="sm:flex  flex-col sm:m-5 sm:flex-row mx-auto w-[60%] sm:w-full  sm:justify-evenly mb-11 ">
         {prgms.map((prgm) => (
           <div
             key={`${prgm.id}2`}
@@ -25,7 +25,9 @@ const OurProgramms = () => {
             <div
               className="bg-[#84cc16] w-[100px]
               h-[100px] -top-5 right-4  rounded-full blur-1 absolute "
-            ></div>
+            >
+              <img src={prgm.img} alt={prgm.title} className="ml-4 mt-3" />
+            </div>
           </div>
         ))}
       </div>

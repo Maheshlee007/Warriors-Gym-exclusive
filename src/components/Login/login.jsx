@@ -12,9 +12,9 @@ const Login = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const [formData, setFormData] = useState({
-    name: "",
+    name: "Warriors",
     email: "",
-    password: "",
+    password: "Titans@300",
   });
   useEffect(() => {
     localStorage.setItem(

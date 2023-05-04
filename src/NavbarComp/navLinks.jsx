@@ -112,14 +112,18 @@ const NavLinks = () => {
       </ul>
       <div
         className="  gap-3 justify-between items-center mx-8 ss:hidden list-none
-      bg-primary border-x-4 border-lime-500 text-black text-5xl w-full -left-8  p-4 rounded-full z-50 flex fixed bottom-0"
+      bg-primary border-x-4 border-lime-500 text-black text-5xl w-full -left-8 
+       p-2 rounded-full z-50 flex fixed bottom-0 transition-all duration-100 ease-in"
       >
         <li className={highlight}>
           <NavLink
             className={({ isActive }) => (isActive ? `${active}` : "")}
             to="/schedule"
           >
-            <img src="https://img.icons8.com/nolan/96/84cc16/0072FF/overtime.png" />
+            <img
+              src="https://img.icons8.com/nolan/96/84cc16/0072FF/overtime.png"
+              className="h-[74px] hover:h-[94px]"
+            />
           </NavLink>
         </li>
         <li className={highlight}>
@@ -127,7 +131,10 @@ const NavLinks = () => {
             className={({ isActive }) => (isActive ? `${active}` : "")}
             to="/contact"
           >
-            <img src="https://img.icons8.com/nolan/96/84cc16/0072FF/business-contact.png" />
+            <img
+              src="https://img.icons8.com/nolan/96/84cc16/0072FF/business-contact.png"
+              className="h-[74px] hover:h-[94px]"
+            />
           </NavLink>
         </li>
         <li className={highlight}>
@@ -135,7 +142,10 @@ const NavLinks = () => {
             to="/"
             className={({ isActive }) => (isActive ? `${active}` : "")}
           >
-            <img src="https://img.icons8.com/nolan/96/84cc16/0072FF/google-home.png" />
+            <img
+              src="https://img.icons8.com/nolan/96/84cc16/0072FF/google-home.png"
+              className="h-[84px] hover:h-[94px]"
+            />
           </NavLink>
         </li>
 
@@ -153,12 +163,18 @@ const NavLinks = () => {
             className={({ isActive }) => (isActive ? `${active}` : "")}
             to="/programms"
           >
-            <img src="https://img.icons8.com/3d-fluency/94/dumbbell.png" />
+            <img
+              src="https://img.icons8.com/3d-fluency/94/dumbbell.png"
+              className="h-[74px]  hover:h-[94px]"
+            />
           </NavLink>
         </li>
         <section className="relative ">
           <button className="rotate-180" onClick={() => setMenu(!menu)}>
-            <img src="https://img.icons8.com/nolan/96/84cc16/0072FF/drag-list-down.png" />
+            <img
+              src="https://img.icons8.com/nolan/96/84cc16/0072FF/drag-list-down.png"
+              className="h-[74px] hover:h-[94px]"
+            />
           </button>
 
           {menu && (

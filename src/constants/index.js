@@ -28,17 +28,20 @@ export const prgms = [
     title: "PROGRESSION",
     text: "Our team of experts will work with you to create a customized plan that \
     helps you achieve success one step at a time.",
+    img: "https://img.icons8.com/nolan/64/1A6D00/0072FF/combo-chart.png",
   },
   {
     id: "NUTRITIONS",
     title: "NUTRITIONS",
     text: `Our team will work with you to create a personalized meal plan
      that helps you reach your specific health goals.`,
+    img: "https://img.icons8.com/nolan/64/FF5300/45145A/vegetarian-food.png",
   },
   {
     id: "WORKOUT",
     title: "WORKOUT",
     text: `With a variety of workouts to choose from, you'll have everything you need to get into the best shape of your life.`,
+    img: "https://img.icons8.com/nolan/64/ff5598/009EFD/barbell.png",
   },
 ];
 
